@@ -98,7 +98,7 @@ for key in types:
     dic['Type']=key
     dic['Total Cases']=tot_c
     dic['By Country']=[]
-    occr_country = get_occr_country(conf_d)
+    occr_country = get_occr_country(types[key])
     for index, value in occr_country.items():
         dic2 = {'Country':index, 'Cases':value}
         dic['By Country'].append(dic2)
